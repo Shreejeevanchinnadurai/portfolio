@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shreejeevan - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Your same CSS styles here, unchanged */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f5f7fa; color: #333; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; background-color: transparent; }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: #ff014f; }
+        .hero { display: flex; justify-content: space-between; align-items: center; padding: 60px; min-height: 90vh; }
+        .hero-text { max-width: 50%; }
+        .hello { color: #777; font-size: 16px; margin-bottom: 10px; }
+        h1 { font-size: 48px; color: #111; margin-bottom: 20px; }
+        .highlight { color: #ff014f; }
+        .description { font-size: 18px; margin-bottom: 30px; line-height: 1.6; }
+        .btn { display: inline-block; background-color: #ff014f; color: #fff; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s; }
+        .btn:hover { background-color: #e60045; }
+        .hero-image img { width: 400px; border-radius: 10px; object-fit: cover; }
+        section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+        h2 { text-align: center; color: #ff014f; margin-bottom: 20px; }
+        #skills ul { list-style-type: none; padding: 0; }
+        #skills li { background: #ff014f; color: white; padding: 10px; margin: 5px 0; border-radius: 5px; text-align: center; }
+        .project { background: white; margin-bottom: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        .project h3 { margin-bottom: 10px; }
+        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 50px; }
+        footer a { color: #ff014f; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) { .hero { flex-direction: column; text-align: center; } .hero-text { max-width: 100%; margin-bottom: 30px; } .hero-image img { width: 300px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Shreejeevan C</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <p class="hello">Hello</p>
+            <h1>I'm <span class="highlight">Shreejeevan Chinnadurai</span></h1>
+            <p class="description">Electronics and Communication Engineering Student | Web Developer | Embedded Systems Enthusiast</p>
+        </div>
+        <div class="hero-image">
+            <img src="sj.jpeg" alt="Shreejeevan C">
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m Shreejeevan Chinnadurai, a passionate and self-driven Electronics and Communication Engineering student with strong interests in <b>IoT development, embedded systems, and automation technologies</b>.</p>
+        <p>I enjoy building <b>real-world solutions that blend hardware and software — from smart control systems to intelligent monitoring platforms</b>.</p>
+        <p>Throughout my academic journey, I have developed multiple hands-on projects including IoT-based control systems using ESP32 and MQTT, a smart car parking system with Arduino, a digital library management system using barcode technology, and an antenna design for RF energy harvesting. With a solid foundation in <b>C, C++, Python, PCB Design, and IoT protocols</b>, I am passionate about creating efficient, scalable, and smart solutions. I am always eager to <b>learn new technologies, solve real-world problems, and contribute meaningfully to innovative projects</b>.</p>
+        <p>My goal is to work on projects that push the boundaries of technology, especially in the areas of IoT, embedded systems, and smart automation.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Embedded Systems Development</li>
+            <li>IoT Project Development</li>
+            <li>PCB Design</li>
+            <li>C Programming</li>
+            <li>C++ Programming</li>
+            <li>Java Programming</li>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>IoT-Based Control and Monitoring System Using MQTT Protocol</h3>
+            <p>Developed a smart IoT system using ESP32 boards with MQTT communication protocol.</p>
+            <ul>
+                <li>Collected real-time sensor data (temperature, humidity, etc.).</li>
+                <li>Controlled a servo motor remotely by sending angle values via MQTT topics.</li>
+                <li>Implemented email alert notifications when sensor readings crossed certain limits.</li>
+                <li>Integrated with Excel sheets to record data dynamically, improving data tracking and analysis.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Arduino-Based Smart Car Parking System</h3>
+            <p>Built a prototype for efficient parking management using Arduino Uno, ultrasonic sensors, and LCD displays.</p>
+            <ul>
+                <li>Detected vehicles using ultrasonic sensors to identify available parking slots.</li>
+                <li>Displayed slot availability in real-time on an LCD.</li>
+                <li>Designed the system for possible expansion into IoT-enabled mobile applications for live slot tracking.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Shreejeevan C. Designed with ❤. <a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+</html>
